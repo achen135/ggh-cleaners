@@ -1,4 +1,4 @@
-.container {
+.service-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: white;
@@ -9,7 +9,7 @@
     border-radius: 1em;
 }
 
-.Img {
+.service-img-container {
     display: flex;
     align-items: center;
     justify-content: right;
@@ -18,13 +18,13 @@
     border-radius: 1em; 
 }
 
-img {
+.service-img {
     width: 100%;
     height: auto; 
     border-radius: 1em; 
 }
 
-.desc {
+.service-desc {
     display: grid;
     grid-template-rows: 19% 1% 80%;
     row-gap: 0.25vh;
@@ -33,18 +33,18 @@ img {
     text-align: center;
 }
 
-.name{
+.service-name{
     font-size: 3em;
     font-weight: bold;
 }
 
-hr { 
+.service-hr { 
     display: block;
     border: solid black 1px;
     width: 100%;
   } 
 
-.bio{
+.service-bio{
     padding-top: 2.75vh;
     font-size: 1.2em;
 }

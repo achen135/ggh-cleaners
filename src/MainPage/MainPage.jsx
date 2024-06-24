@@ -1,8 +1,11 @@
 import React from 'react';
 import './MainPage.css';
-import Services1, { Services2 } from './Services'; // Import Services1 as default and Services2 as named export
+import Services1, { Services2 } from './services/Services.jsx';
+import About from './about/About.jsx'
 
 const MainPage = () => {
+
+    //Generates list of services
     const servicesData = [
         {
             imgSrc: './powerwash.jpg',
@@ -19,11 +22,21 @@ const MainPage = () => {
     return (
         <>
             <div className='wholePage'>
+                {/* Hero */}
                 <div className='mainImage'>
                     r1
                 </div>
 
+                {/* Rest of the web page */}
                 <div className='otherStuff'>
+        
+                  {/* About Us */}
+                    <div className='about'>
+                        <About/>
+                    </div>
+
+
+                  {/* List of Services */}
                     <div className='services'> 
                         {servicesData.map((service, i) => (
                             i % 2 == 0 ? (
@@ -37,6 +50,8 @@ const MainPage = () => {
                             )
                         ))}
                     </div>
+
+
                 </div>
             </div>
         </>  
