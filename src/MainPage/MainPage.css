@@ -1,0 +1,18 @@
+.wholePage{
+    display: grid;
+    grid-template-rows: 65vh 1fr;
+    width: 100vw;
+    height: 200vh;
+}
+
+.mainImage{
+    background-color: aqua;
+}
+
+.otherStuff{
+    width: 66%;
+    margin-left: 17%;
+    display: flex;
+    flex-direction: column;
+
+}

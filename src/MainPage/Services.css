@@ -1,0 +1,50 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0.25em 0.25em 0.1em #a8b6bb;
+    height: 30vh;
+    padding: 1.5vw;
+    margin-top: 3.5vh;
+    border-radius: 1em;
+}
+
+.Img {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em; 
+}
+
+img {
+    width: 100%;
+    height: auto; 
+    border-radius: 1em; 
+}
+
+.desc {
+    display: grid;
+    grid-template-rows: 19% 1% 80%;
+    row-gap: 0.25vh;
+    margin: 1vw;
+    margin-left: 0.5vw;
+    text-align: center;
+}
+
+.name{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+hr { 
+    display: block;
+    border: solid black 1px;
+    width: 100%;
+  } 
+
+.bio{
+    padding-top: 2.75vh;
+    font-size: 1.2em;
+}
